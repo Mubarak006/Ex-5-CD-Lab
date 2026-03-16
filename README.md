@@ -71,6 +71,30 @@ void yyerror(const char *msg) {
 ```
 # OUTPUT
 
+Microsoft Windows [Version 10.0.26100.7840]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Dev-Cpp\TDM-GCC-64\bin\exp5>flex expr5.l
+
+C:\Dev-Cpp\TDM-GCC-64\bin\exp5>bison -dy expr5.y
+
+C:\Dev-Cpp\TDM-GCC-64\bin\exp5>gcc lex.yy.c y.tab.c -w
+
+C:\Dev-Cpp\TDM-GCC-64\bin\exp5>a.exe
+Enter a string (aΓü┐b where n >= 10):
+aaaaaaaaaaab
+Valid string: 11 a's followed by b
+
+C:\Dev-Cpp\TDM-GCC-64\bin\exp5>a.exe
+Enter a string (aΓü┐b where n >= 10):
+aaaaaaaaaaaaab
+Valid string: 13 a's followed by b
+
+C:\Dev-Cpp\TDM-GCC-64\bin\exp5>a.exe
+Enter a string (aΓü┐b where n >= 10):
+aaaaaaab
+Invalid: Less than 10 a's
+
 
 
 
