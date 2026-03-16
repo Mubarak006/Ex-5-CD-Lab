@@ -71,6 +71,7 @@ void yyerror(const char *msg) {
 ```
 # OUTPUT
 
+```
 Microsoft Windows [Version 10.0.26100.7840]
 (c) Microsoft Corporation. All rights reserved.
 
@@ -95,7 +96,7 @@ Enter a string (aΓü┐b where n >= 10):
 aaaaaaab
 Invalid: Less than 10 a's
 
-
+```
 
 
 
